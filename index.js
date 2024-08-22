@@ -3,7 +3,7 @@ require('dotenv').config()
 const app = express();
 const port = 3002
 const conn = require('./mdb/conn')
-
+const cors = require('cors')
 //Books
 const bookRoutes = require('./routes/booksRoutes')
 const Book = require('./models/bookModel')
@@ -19,6 +19,7 @@ const mythicalRoutes = require('./routes/mythicalRoutes')
 const Mythical = ('./models/mythicalModel')
 const starterMythical = require('./mdb/mythicalSeed')
 
+app.use(cors())
 app.use(express.json())
 conn()
 

@@ -12,8 +12,14 @@ const BookSchema = new mongoose.Schema({
     series:{
       type:  String,
     required: true
+    },
+    reviews: [
+      {
+        type: mongoose.Schema.ObjectId,
+        ref: "reviewSchema",
     
-    }
+      },
+    ],
 })
 
 const Book = mongoose.model('book', BookSchema )

@@ -37,6 +37,7 @@ router.patch('/:id', async (req,res) => {
     res.json(updateMythical)
 })
 
+//delete
 router.delete('/:id', async (req,res) => {
     const deleteMythical = await Mythical.findByIdAndDelete(req.params.id)
     res.json(deleteMythical)
