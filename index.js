@@ -19,6 +19,12 @@ const mythicalRoutes = require('./routes/mythicalRoutes')
 const Mythical = ('./models/mythicalModel')
 const starterMythical = require('./mdb/mythicalSeed')
 
+//Reviews
+const reviewRoutes = require('./routes/reviewsRoutes')
+const Review = require('./models/reviewsModel')
+const starterReview = require('./mdb/reviewSeed')
+
+
 app.use(cors())
 app.use(express.json())
 conn()
@@ -27,6 +33,7 @@ conn()
 app.use('/books', bookRoutes)
 app.use('/characters', characterRoutes)
 app.use('/mythicals', mythicalRoutes)
+app.use('/reviews', reviewRoutes)
 
 app.get('/', (req,res) => {
     res.send('Percy Jackson Home Route ')
@@ -68,6 +75,14 @@ app.get('/mdb/mythicalSeed', async (req,res) => {
 }
 )
 
+app.get('mbd/reviewSeed', async(req,res) => {
+    try {
+        await Review.create(starterReview)
+        res.json(starterReview)
+    } catch (error) {
+        console.log(`Something went wrong with loading review seed data`)
+    }
+})
 app.listen(port, ()=> {
     console.log(`Server is running on port: ${port}`)
 })
