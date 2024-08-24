@@ -8,17 +8,13 @@ const ReviewSchema = new mongoose.Schema({
     ratings: {
       type:  String, //adding the dropdonw menu option to the schema?
     required: true,
+    //enum: ['Excellent', 'Great', 'Very Good', 'Good', 'Okay', 'Poor']
     },
     content:{
       type:  String,
     required: true
     
-    },
-   book: {
-    type: mongoose.Schema.ObjectId,
-    ref: "bookSchema",
-    required: true
-   }
+    }
 })
 
 const Review = mongoose.model('Review', ReviewSchema )

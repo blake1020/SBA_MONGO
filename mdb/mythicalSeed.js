@@ -1,8 +1,8 @@
 const mythicalSeed = [
   {
       name: "Fates",
-      species: "",
-      alliance: "Hades",
+      species: "Goddesses",
+      alliance: "Olympians",
       description: "The three Fates were mysterious old hags who controlled the destiny of all living beings from birth to death. They spun out each life as a thread, and cut it at the moment of death. Even the supposedly immortal gods were afraid of the Fates.",
      
       
@@ -10,57 +10,68 @@ const mythicalSeed = [
      },
      {
       name: "Furies",
-      alliance: "Enenmy Monster",
+      species: "Monster",
+      alliance: "Hades",
       description: "The three Furies were avenging spirits controlled by Hades. Theyhad bat wings, fiery whips, and are sometimes pictured with bleedingeyes, snake hair, and the heads of dogs. They oversaw some of thepunishment in the underworld, but Hades would also send them into theworld of the living to punish especially wicked people. They could drive their victims mad.",
       
      },
      {
       name: "Harpies",
-      alliance: "",
+      species: "Harpies",
+      alliance: "Olympians",
       description: "Harpies are wild, unruly bird-winged maidens, sometimes pictured as ugly hags. They stole food from the seer Phineas as a punishment from Zeus. Sometimes they carried off people to the underworld.",
      },
      {
       name: "Cerberus",
+      species: "Giant Three-Headed Dog",
       alliance: "Neutral Monster",
       description: "The three-headed dog who guards the gates of the underworld. A son of the monster Echidna, Cerberus permits new spirits to enter the world of the dead, but will not allow any to leave.",
      },
      {
       name: "Chiron",
-      alliance: "",
+      species: "Centaur",
+      alliance: "Olympians/Camp Half-Blood",
       description: "This immortal centaur was kindly and wise. He trained many heroes, including Heracles (Hercules)."
      },
      {
       name: "Medusa",
-      alliance:"Enemy Monsters",
+      species: "Human(formerly), Gorgon",
+      alliance:"Athena(formerly), Enemy Monsters",
       description: "One of three sisters called the Gorgons, Medusa was once a lovely maiden. She had an affair with Poseidon in the temple of Athena, and because of this Athena turned her into a hideous monster. Her hair became live snakes, and her gaze could petrify any who looked upon her. Perseus later cut off her head, which was mounted on Athena’s shield, the aegis."
      },
      {
-      alliance: "Enemy Monsters",
       name: "Minotaur",
+      species: "Monster",
+      alliance: "Titans",
       description: "The horrible son of Pasiphae, the queen of Crete, who mated with a white bull because of a curse inflicted by Poseidon. The Minotaur was half-man, half-bull. He caused so much destruction that King Minos had his famous architect Daedalus build a maze called the Labyrinth to imprison the beast. Each year, maidens and young men from Athens were sacrificed to the Minotaur until Theseus killed the monster."
      },
      {
       name: "Naiads",
+      species: "Naiads(cousin of Nereids)",
       alliance: "The Olympians",
       description: "Female spirits that inhabit bodies of fresh water such as river and lakes.",
      },
      {
       name: "Nereids",
+      species: "Nereids(cousin of Naiads)",
       alliance: "The Olympians",
       description: "Female spirits of the sea.",
      },
      {
       name: "Dryads",
+      species: "Nymph",
       alliance: "The Olympians",
       description: "Female spirits of nature that live in trees or forests.",
      },
      {
       name: "Chimera",
-      alliance: "Enemy Monsters",
+      species: "Monster",
+      alliance: "Echidna",
       description: "The Chimera was one monstrous offspring of Echidna. It had the body of a goat, the head of a lion, and the tail of a serpent. It terrorized Asia Minor until it was killed by the hero Bellerophon."
      },
      {
       name: "Lotus Eaters",
+      species: "Human",
       alliance: "Enemy Monsters",
       description: "On his way back from the Trojan War, Odysseus encountered the Land of the Lotus Eaters, where the inhabitants lived in perfect contentment doing nothing but eating lotuses all day. This lazy lifestyle was dangerous because it tempte Odysseus's sailors to forget about their journey and remain on the island."
      },

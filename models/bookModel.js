@@ -13,6 +13,14 @@ const BookSchema = new mongoose.Schema({
       type:  String,
     required: true
     },
+    summary: {
+      type: String,
+      required: false
+    },
+    // cover: {
+    // type: String,
+    // required: false,
+    // },
     reviews: [
       {
         type: mongoose.Schema.ObjectId,

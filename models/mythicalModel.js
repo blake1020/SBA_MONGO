@@ -7,7 +7,11 @@ const MythicalSchema = new mongoose.Schema({
     },
     species: {
       type:  String,
-    required: true,
+    required: false,
+    },
+    alliance: {
+      type: String,
+      required: false,
     },
     description:{
       type:  String,
