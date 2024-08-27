@@ -8,7 +8,7 @@ const ReviewSchema = new mongoose.Schema({
     ratings: {
       type:  String, //adding the dropdonw menu option to the schema?
     required: true,
-    //enum: ['Excellent', 'Great', 'Very Good', 'Good', 'Okay', 'Poor']
+    enum: ['Excellent', 'Great', 'Very Good', 'Good', 'Okay', 'Poor']
     },
     content:{
       type:  String,

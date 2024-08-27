@@ -12,7 +12,7 @@ router.get('/:id', async (req,res) => {
     console.log(req.params.id)
     try {
         const oneBook = await Book.findById(req.params.id)
-        
+        console.log(oneBook.reviews)
         res.json(oneBook) 
     } catch (error) {
        // res.statusCode(500).json({msg: "Something went wrong"})
